@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bar</title>
+    <style type="text/css">
+    .line {
+        display: inline-block;
+    }
+    
+    .tittle {
+        display: inline-block;
+        margin: 0px 30px;
+        font-size: 1.3em;
+    }
+    
+    .select_a {
+        display: inline-block;
+        float: right;
+        margin: 14px 15px;
+    }
+    
+    .icon {
+        font-family: Microsoft YaHei;
+        font-weight: 500;
+        border: 1px solid transparent;
+        border-color: #e7e7e7;
+        border-radius: 4px;
+        margin: 15px 113px;
+    }
+    
+    .content {
+        margin: 0px 10px;
+    }
+    
+    .left {
+        padding-left: 0px;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    a:link{
+		color: #000000;
+    }
+    a:visited{
+    	color: #000000;
+    }
+    .li1{
+    	display: list-item;
+    }
+    .div1{
+    	display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="icon">
+            <div class="tittle">蜂巢</div>
+            <div class="line">
+                <ul class="left">
+                    <span class="content"><a href="#">目录一</a></span>
+                    <span class="content"><a href="#">目录二</a></span>
+                    <span class="content"><a href="#">目录三</a></span>
+                </ul>
+            </div>
+            <div class="select_a">
+                <form action="test.php">
+                    <select name="test">
+                        <option value="a">AAAAA</option>
+                        <option value="b">BBBBB</option>
+                        <option value="c">CCCCC</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
