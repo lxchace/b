@@ -27,7 +27,7 @@
         border: 1px solid transparent;
         border-color: #e7e7e7;
         border-radius: 4px;
-        margin: 15px 113px;
+        margin: 15px 113px 100px 113px;
     }
     
     .content {
@@ -38,20 +38,28 @@
         padding-left: 0px;
     }
     
-    a{
+    a {
         text-decoration: none;
     }
-    a:link{
-		color: #000000;
+    
+    a:link {
+        color: #000000;
     }
-    a:visited{
-    	color: #000000;
+    
+    a:visited {
+        color: #000000;
     }
-    .li1{
-    	display: list-item;
+    
+    .display_2 {
+        display: none;
     }
-    .div1{
-    	display: block;
+    
+    .display_1:hover .display_2 {
+        display: block;
+    }
+    
+    #display_4 {
+        display: none;
     }
     </style>
 </head>
@@ -59,7 +67,7 @@
 <body>
     <nav>
         <div class="icon">
-            <div class="tittle">蜂巢</div>
+            <div class="tittle">蜂巢CSS</div>
             <div class="line">
                 <ul class="left">
                     <span class="content"><a href="#">目录一</a></span>
@@ -68,16 +76,59 @@
                 </ul>
             </div>
             <div class="select_a">
-                <form action="test.php">
+                <div>
+                    <li class="display_1">鼠标快过来
+                        <ul class="display_2">
+                            <li><a href="#">目录A</a></li>
+                            <li><a href="#">目录B</a></li>
+                            <li><a href="#">目录C</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <!--               <form action="test.php">
                     <select name="test">
                         <option value="a">AAAAA</option>
                         <option value="b">BBBBB</option>
                         <option value="c">CCCCC</option>
                     </select>
-                </form>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <nav>
+        <div class="icon">
+            <div class="tittle">蜂巢JS</div>
+            <div class="line">
+                <ul class="left">
+                    <span class="content"><a href="#">目录一</a></span>
+                    <span class="content"><a href="#">目录二</a></span>
+                    <span class="content"><a href="#">目录三</a></span>
+                </ul>
+            </div>
+            <div class="select_a">
+                <div>
+                    <li class="display_3" onmousemove="display5()" onmouseout="display7()">鼠标快过来
+                        <ul id="display_4">
+                            <li><a href="#">目录A</a></li>
+                            <li><a href="#">目录B</a></li>
+                            <li><a href="#">目录C</a></li>
+                        </ul>
+                    </li>
+                </div>
             </div>
         </div>
     </nav>
 </body>
+<script type="text/javascript">
+function display5() {
+    var display6 = document.getElementById("display_4");
+    display6.style.display = "block";
+}
+
+function display7() {
+    var display8 = document.getElementById("display_4");
+    display8.style.display = "none";
+}
+</script>
 
 </html>
