@@ -61,6 +61,10 @@
     #display_4 {
         display: none;
     }
+    
+    #display_6 {
+        display: none;
+    }
     </style>
 </head>
 
@@ -97,7 +101,7 @@
     </nav>
     <nav>
         <div class="icon">
-            <div class="tittle">蜂巢JS</div>
+            <div class="tittle">蜂巢JS1</div>
             <div class="line">
                 <ul class="left">
                     <span class="content"><a href="#">目录一</a></span>
@@ -118,6 +122,29 @@
             </div>
         </div>
     </nav>
+    <nav>
+        <div class="icon">
+            <div class="tittle">蜂巢JS2</div>
+            <div class="line">
+                <ul class="left">
+                    <span class="content"><a href="#">目录一</a></span>
+                    <span class="content"><a href="#">目录二</a></span>
+                    <span class="content"><a href="#">目录三</a></span>
+                </ul>
+            </div>
+            <div class="select_a">
+                <div>
+                    <li class="display_5" onclick="display9()">鼠标快过来
+                        <ul id="display_6">
+                            <li><a href="#">目录A</a></li>
+                            <li><a href="#">目录B</a></li>
+                            <li><a href="#">目录C</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 <script type="text/javascript">
 function display5() {
@@ -128,6 +155,15 @@ function display5() {
 function display7() {
     var display8 = document.getElementById("display_4");
     display8.style.display = "none";
+}
+
+function display9() {
+    var display0 = document.getElementById("display_6");
+    if (display0.style.display == "block") {
+        display0.style.display = "none";
+    } else {
+        display0.style.display = "block";
+    };
 }
 </script>
 
